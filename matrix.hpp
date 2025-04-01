@@ -5,8 +5,10 @@
 #include <vector>
 
 class Matrix {
+private:
+    int size;
 public:
-    Matrix(std::size_t N);
+    Matrix(std::size_t N); 
     Matrix(std::vector<std::vector<int>> nums);
 
     Matrix operator+(const Matrix &rhs) const;
