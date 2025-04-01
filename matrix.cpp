@@ -42,10 +42,6 @@ void Matrix::swap_cols(std::size_t c1, std::size_t c2){
 
 }
 
-void Matrix::print_matrix() const{
-
-}
-
 // e.g. for a member function:
 
 void Matrix::print_matrix() const {
