@@ -8,17 +8,27 @@
 // e.g. for the constructor:
 
 Matrix::Matrix(size_t N) {
-    // initialize an empty NxN matrix
+    //initialize empty matrix
     Matrix::size = N;
-    for(int i = 0; i < N; i++){
-        for(int j = 0; j < N; j++){
-            Matrix::data[i][j] = 0;
+    Matrix::newMatrix = std::vector<std::vector<int>> (N,std::vector<int> (N,0));
+}
+
+Matrix::Matrix(std::vector<std::vector<int>> nums) {
+    for(int i = 0; i < Matrix::size; i++){
+        for(int j = 0; j < Matrix::size; j++){
+            Matrix::newMatrix[i][j] = nums[i][j];
         }
     }
 }
 
-void Matrix::set_value(std::size_t i, std::size_t j, int n){
+Matrix Matrix::operator+(const Matrix &rhs) const{
 
+}
+Matrix Matrix::operator*(const Matrix &rhs) const{
+
+}
+
+void Matrix::set_value(std::size_t i, std::size_t j, int n){
 }
 
 int Matrix::get_value(std::size_t i, std::size_t j) const{
