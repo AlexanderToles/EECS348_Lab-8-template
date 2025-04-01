@@ -12,17 +12,6 @@ Matrix::Matrix(size_t N) {
     Matrix::size = N;
 }
 
-Matrix::Matrix(std::vector<std::vector<int>> nums){
-
-}
-Matrix Matrix::operator+(const Matrix &rhs) const{
-
-}
-
-Matrix Matrix::operator*(const Matrix &rhs) const{
-
-}
-
 void Matrix::set_value(std::size_t i, std::size_t j, int n){
 
 }
