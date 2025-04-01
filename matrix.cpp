@@ -10,6 +10,11 @@
 Matrix::Matrix(size_t N) {
     // initialize an empty NxN matrix
     Matrix::size = N;
+    for(int i = 0; i < N; i++){
+        for(int j = 0; j < N; j++){
+            Matrix::data[i][j] = 0;
+        }
+    }
 }
 
 void Matrix::set_value(std::size_t i, std::size_t j, int n){
