@@ -32,8 +32,7 @@ void Matrix::set_value(std::size_t i, std::size_t j, int n){
 }
 
 int Matrix::get_value(std::size_t i, std::size_t j) const{
-    return 0;
-
+    return(Matrix::newMatrix[i][j]);
 }
 
 int Matrix::get_size() const{
