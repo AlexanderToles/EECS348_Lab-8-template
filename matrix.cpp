@@ -10,7 +10,7 @@
 Matrix::Matrix(size_t N) {
     //initialize empty matrix
     Matrix::size = N;
-    Matrix::newMatrix = std::vector<std::vector<int>> (N,std::vector<int> (N,0));
+    Matrix::newMatrix = std::vector<std::vector<int>> (N,std::vector<int> (N));
 }
 
 Matrix::Matrix(std::vector<std::vector<int>> nums) {
@@ -36,7 +36,7 @@ int Matrix::get_value(std::size_t i, std::size_t j) const{
 }
 
 int Matrix::get_size() const{
-    return(Matrix::size);
+    return(Matrix::newMatrix.size());
 }
 
 int Matrix::sum_diagonal_major() const{
