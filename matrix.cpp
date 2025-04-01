@@ -28,6 +28,7 @@ void Matrix::set_value(std::size_t i, std::size_t j, int n){
 }
 
 int Matrix::get_value(std::size_t i, std::size_t j) const{
+    return 0;
 
 }
 
@@ -36,10 +37,11 @@ int Matrix::get_size() const{
 }
 
 int Matrix::sum_diagonal_major() const{
-
+    return 0;
 }
 
 int Matrix::sum_diagonal_minor() const{
+    return 0;
 
 }
 
